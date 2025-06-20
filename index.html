@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cum să faci bani online</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap">
+  <style>
+    :root {
+      --accent: #00ffcc;
+      --bg-dark: rgba(0, 0, 0, 0.7);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: url('https://images.unsplash.com/photo-1604147706289-53e6c5d5d6ae?auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Header & Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 3px;
+      width: 25px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--bg-dark);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 6px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: var(--accent);
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-contact:hover {
+      background-color: #00c6a0;
+    }
+
+    section {
+      background: var(--bg-dark);
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 30px 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      border-left: 5px solid var(--accent);
+      padding-left: 15px;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "💸";
+      margin-right: 10px;
+    }
+
+    article h3 {
+      margin-top: 0;
+    }
+
+    blockquote {
+      margin-bottom: 15px;
+      font-style: italic;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      color: #bdecdc;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.85em;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      .btn-contact {
+        font-size: 0.9em;
+        padding: 10px 16px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">💰 BaniOnline</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#idei">Idei</a>
+      <a href="#proiecte">Proiecte</a>
+      <a href="#video">Video</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimoniale">Testimoniale</a>
+      <a href="#oferte">Oferte</a>
+      <a href="mailto:contact@banionline.ro">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Cum să faci bani online</h1>
+    <p>Strategii inteligente pentru venituri digitale rapide și sigure</p>
+    <a href="mailto:contact@banionline.ro" class="btn-contact">📩 Contactează-mă</a>
+  </header>
+
+  <!-- IDEI -->
+  <section id="idei">
+    <h2>💡 Idei de făcut bani online</h2>
+    <ul>
+      <li>Freelancing pe Upwork, Fiverr, Freelancer</li>
+      <li>Vânzare de produse digitale (ebook-uri, cursuri)</li>
+      <li>Canal YouTube / TikTok monetizat</li>
+      <li>Marketing afiliat – comision la vânzări</li>
+      <li>Blog personal cu AdSense</li>
+    </ul>
+  </section>
+
+  <!-- PROIECTE -->
+  <section id="proiecte">
+    <h2>⚡ Proiecte rapide pentru bani</h2>
+    <ul>
+      <li>Teste de utilizator plătite</li>
+      <li>Gigs rapide: logo, voice-over, traduceri</li>
+      <li>Chestionare plătite (Swagbucks, Attapoll)</li>
+      <li>Revânzare de domenii sau NFT-uri</li>
+    </ul>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video">
+    <h2>🎥 Video explicativ</h2>
+    <p>Dă click mai jos pentru a vedea un videoclip despre cum să faci bani online:</p>
+    <a href="https://www.youtube.com/watch?v=_qYW3bGCEr8" target="_blank" class="btn-contact">▶️ Vezi video pe YouTube</a>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>📝 Blog: Articole recente</h2>
+    <article style="margin-bottom: 20px;">
+      <h3>Cum am câștigat 500€ în 2 săptămâni lucrând online</h3>
+      <p>Descoperă povestea mea și metodele exacte pe care le-am folosit.</p>
+    </article>
+    <article>
+      <h3>Top 5 aplicații care te plătesc pentru timpul tău</h3>
+      <p>Am testat personal aceste aplicații și îți spun care merită cu adevărat.</p>
+    </article>
+  </section>
+
+  <!-- TESTIMONIALE -->
+  <section id="testimoniale">
+    <h2>🗣️ Ce spun alții</h2>
+    <blockquote>„Am început cu ideile de pe acest site și am câștigat primii mei bani online!”<br><strong>- Andrei M.</strong></blockquote>
+    <blockquote>„Simplu, clar și foarte util. Recomand oricui vrea o sursă de venit în plus.”<br><strong>- Ioana P.</strong></blockquote>
+  </section>
+
+  <!-- OFERTE -->
+  <section id="oferte">
+    <h2>💳 Oferte și plăți directe</h2>
+    <p>Fiecare tutorial individual: <strong>10€</strong></p>
+    <p>Cont TikTok (fără VPN sau alte complicații): <strong>50€</strong></p>
+    <p>Toate pachetele la preț special: <strong>200€</strong></p>
+    <p><em>Dacă în primele 14 zile nu faci bani, primești <strong>garanția returnării banilor</strong>!</em></p>
+
+    <a href="https://revolut.me/mrbulan" target="_blank" class="btn-contact" style="margin-top: 20px;">
+      💸 Plătește direct în contul meu Revolut
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 BaniOnline.ro • Toate drepturile rezervate • contact@banionline.ro
+  </footer>
+
+  <!-- SCRIPT pentru meniu mobil -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
